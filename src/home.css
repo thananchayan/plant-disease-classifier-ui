@@ -214,11 +214,16 @@ button,
 
 
 .pg-result {
-    margin-top: 18px;
-    color: #333;
-    font-size: 16px;
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f1fdf2;
+  border: 1px solid #d1fadf;
+  color: #064e3b;
+  font-size: 16px;
+  text-align: left;
 }
-
+.pg-result p { margin: 4px 0; }
 
 @media (max-width: 640px) {
     .pg-divider {
