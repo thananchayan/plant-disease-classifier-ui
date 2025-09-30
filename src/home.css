@@ -1,0 +1,237 @@
+/* Reset default button look (removes white shade) */
+button,
+.browse-btn,
+.upload-btn,
+.analyze-btn,
+.clear-btn {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: none !important;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Fullscreen background */
+.pg-page {
+    background: no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.pg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background: #fff;
+}
+
+.pg-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pg-logo {
+    height: 40px;
+}
+
+.pg-tagline {
+    font-size: 14px;
+    color: #397215;
+    font-weight: 600;
+}
+
+/* Divider */
+.pg-divider {
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(90deg, #6dbf3a, #17471f);
+}
+
+/* Backdrop */
+.pg-backdrop {
+    width: min(1180px, 92vw);
+    margin: 40px auto 60px;
+    padding: 40px 28px;
+    border-radius: 22px;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+/* Caption */
+.pg-caption {
+    color: #d2d1d1;
+    font-size: 14px;
+    margin: 0 0 22px 0;
+    text-align: justify;
+}
+
+/* Card */
+.pg-card {
+    margin: 0 auto;
+    width: min(700px, 94%);
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 12px;
+    padding: 28px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Form */
+.resume-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Upload box */
+.upload-box {
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.upload-icon {
+    font-size: 32px;
+    color: #3aa54b;
+    margin-bottom: 10px;
+}
+
+.upload-box p {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.upload-box small {
+    display: block;
+    margin-bottom: 12px;
+    color: #64748b;
+}
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 6px;
+    margin-top: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #3aa54b, #6dbf3a);
+    transition: width 0.3s ease-in-out;
+}
+
+/* Buttons */
+.browse-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    font-family: "Calibri", "Segoe UI", sans-serif;
+}
+
+/* Upload button */
+.upload-btn {
+    background: #ffffff;
+    color: #4b5563;
+    border: 2px solid #d9dde2 !important;
+}
+
+.upload-btn:hover {
+    background: #f5f5f5;
+}
+
+/* Analyze button */
+.analyze-btn {
+    font-size: 16px;
+    background: #3aa54b !important;
+    color: #fff !important;
+    flex: 1;
+}
+
+.analyze-btn:hover {
+    background: #2e7d32 !important;
+}
+
+/* Remove button */
+.clear-btn {
+    background: #e2e4e4;
+    color: #b9ad06;
+    font-size: 16px;
+    flex: 1;
+}
+
+.clear-btn:hover {
+    background: #5f6060;
+    color:#d9dde2;
+}
+
+
+.browse-btn:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+
+.preview-wrap {
+    margin-top: 14px;
+}
+
+.preview-img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    padding: 6px;
+}
+
+/* Button row */
+.action-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+/* Result */
+.pg-result {
+    margin-top: 18px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .pg-divider {
+        height: 18px;
+    }
+
+    .pg-backdrop {
+        padding: 24px 16px;
+        margin: 24px auto 40px;
+    }
+
+    .pg-card {
+        padding: 20px;
+    }
+}
