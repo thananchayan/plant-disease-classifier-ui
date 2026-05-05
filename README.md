@@ -56,8 +56,8 @@ user-friendly web interface.
 ``` bash
 git clone https://github.com/your-username/plant-disease-classifier.git
 cd plant-disease-classifier
-pip install -r requirements.txt
-uvicorn app:app --reload
+npm install
+npm run dev
 ```
 
 ------------------------------------------------------------------------
